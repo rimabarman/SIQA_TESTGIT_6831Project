@@ -7,3 +7,32 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_testgit_6831.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsertNew
+  packages:
+  - name: SIQA_TESTGIT_6831Project
+    version: "1.0"
+- serviceName: project.siqa_testgit_6831.integrations:AlertsCRTandERT
+  packages:
+  - name: SIQA_TESTGIT_6831Project
+    version: "1.0"
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: project.siqa_testgit_6831.integrations:deepclonetest
+  packages:
+  - name: SIQA_TESTGIT_6831Project
+    version: "1.0"
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.utils:deepClone
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
